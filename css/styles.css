@@ -1,0 +1,64 @@
+/* Global */
+* {
+    box-sizing: border-box;
+}
+:root {
+    --primary: rgb(33,37,41);
+    --primary-t: rgba(33,37,41,0);
+    --secondary: rgb(40,44,48);
+    --faded-grey: rgba(255,255,255,0.1);
+}
+
+body {
+    background-color: var(--primary); 
+    color: white;
+}
+  
+/* Navbar */
+.navbar {
+    /* border-bottom: 1px solid lightgrey; */
+    /* Reduce thickness of focus shadow */
+    --bs-navbar-toggler-focus-width: 0.1rem;
+    background-color: var(--primary) 
+}
+
+.navbar a {
+    color: white;
+}
+
+.navbar-container {
+    border-bottom: 1px solid var(--faded-grey);
+}
+
+#navbarNavAltMarkup {
+    /* Position nav links at end of row */
+    justify-content: end;
+}
+
+.navbar-nav {
+    /* Center align dropdown along single row */
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+}
+
+.navbar-toggler {
+    border: var(--bs-border-width) solid white;
+}
+
+.navbar-toggler-icon {
+    /* Replace default bootstrap icon with white version*/
+    background-image: url("../images/burger-icon.svg")
+}
+
+/* Jumbotron */
+.jumbotron {
+    /* Account for fixed header height */
+    margin-top: 100px;
+}
+.jumbotron > .container {
+    border: 1px solid var(--faded-grey);
+    background: radial-gradient(at bottom right,rgba(255, 212, 195, 0.2) 0%, var(--primary-t) 51%);
+    /* background: linear-gradient(144deg, rgba(255,173,239,1) 0%, rgba(255,255,255,0) 21%);*/
+}

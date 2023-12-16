@@ -6,14 +6,23 @@
     <title>Rory's Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
   </head>
 
   <body>
     <!-- Navbar Start -->
     <nav class="navbar fixed-top navbar-expand-sm">
       <div class="container navbar-container pt-2 pb-3">
-        <a class="navbar-brand" href="#">
-          <img src="./images/BB.svg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top text-white">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img 
+            src="./images/BB.svg" 
+            alt="Blank Box Logo" 
+            width="30" 
+            height="30" 
+            class="d-inline-block align-text-top text-white pe-2"
+          >
           Rory Simmonds
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,24 +30,117 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">Features</a>
-            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link" href="#">Portfolio</a>
+            <a class="nav-link" href="#">Skills</a>
+            <a class="nav-link" href="#">Contact</a>
           </div>
         </div>
       </div>
     </nav>
     <!-- Navbar End -->
 
-    <!-- Jumbotron Start -->
-    <div class="jumbotron p-5 mb-2">
-      <div class="container py-5 rounded-5">
-        <h1 class="display-5 fw-bold">Custom jumbotron</h1>
-        <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your liking.</p>
-        <button class="btn btn-primary btn-lg" type="button">Example button</button>
-      </div>
-    </div>
-    <!-- Jumbotron End -->
+    <main>
+      <!-- Jumbotron Start -->
+      <section class="jumbotron" id="home">
+        <div class="container p-5 rounded-5">
+          <div class="row flex-lg-row flex-column-reverse">
+            <!-- Text / Content Start -->
+            <div class="col-lg-8 my-auto text-center text-lg-start">
+              <p class="display-5 fw-bold">Learning to build amazing things on the web, one div at a time.</p>
+              <p class="col-lg-10 fs-5">Keep reading for my portfolio, about me, and my contact details.</p>
+              <button class="btn btn-primary btn-lg" type="button">Get in touch</button>
+            </div>
+            <!-- Headshot -->
+            <div class="col-6 col-lg-4 pb-3 pb-lg-0 headshot m-auto ">
+              <img 
+                src="./images/rory-bio-picture.jpg" 
+                class="img-fluid faded-shadow"
+                alt="MY headshot, wearing a blue jumper"
+                >
+            </div>
+            <!-- Content Ends -->
+          </div>
+        </div>
+      </section>
+      <!-- Jumbotron End -->
+
+      <!-- Portfolio Start -->
+      <section id="portfolio">
+        <div class="container p-5 rounded-5 text-center d-flex flex-column">
+          <h2 class="display-6 fw-bold mb-3">My Projects</h1>
+          <!-- Grid Start-->
+          <div class="grid">
+            <!-- Project 1 / Projects Start -->
+            <a class="card hero" id="project-1" href="https://slabcitypizza.co.uk/" target=”_blank”>
+              <img 
+              src="./images/slab-city-website.jpg" 
+              alt="A mobile showing a website with a red background and a white logo that reads Slab City"
+              class="card-img-top"
+              >
+              <div class="card-body">
+                <h3 class="card-text fs-3">Slab City</h3>
+                <p>web, branding</p>
+              </div>
+            </a>
+            <!-- Project 2 -->
+            <a class="card" id="project-2" href="https://blankbox.business/" target=”_blank”>
+              <img 
+              src="./images/design-fundamentals.jpg"
+              alt="A brochure open to a page with yellow and black infographics"
+              class="card-img-top"
+              >
+              <div class="card-body">
+                <h3 class="card-text fs-5">Design Fundamentals</h3>
+                <p>graphic, brochure</p>
+              </div>
+            </a>
+            <!-- Project 3 -->
+            <a class="card" id="project-3" href="https://blankbox.business/" target=”_blank”>
+              <img 
+              src="./images/bdr-flyers.png"
+              alt="Two flyers advertising a cycling charity event"
+              class="card-img-top"
+              >
+              <div class="card-body">
+                <h3 class="card-text fs-5">Charity Flyer</h3>
+                <p>graphic, flyer</p>
+              </div>
+            </a>
+            <!-- Project 4 -->
+            <a class="card" id="project-4" href="https://theearlybirdbakery.co.uk/" target=”_blank”>
+              <img 
+              src="./images/early-bird-website.jpg"
+              alt="A laptop, tablet and mobile all showing a website homepage for a bakery"
+              class="card-img-top"
+              >
+              <div class="card-body">
+                <h3 class="card-text fs-5">Early Bird Bakery</h3>
+                <p>web, ecommerce</p>
+              </div>
+            </a>
+            <!-- Project 5 -->
+            <a class="card" id="project-5" href="https://blankbox.business/" target=”_blank”>
+              <img 
+              src="./images/chippa-nation.jpg"
+              alt="Two sheets of paper showing the branding for a company called Chippa Nation"
+              class="card-img-top"
+              >
+              <div class="card-body">
+                <h3 class="card-text fs-5">Chippa Nation</h3>
+                <p>graphics, branding</p>
+              </div>
+            </a>
+            <!-- Projects End -->
+          </div>
+          <!-- Grid End -->
+        </div>
+      </section>
+      <!-- Portfolio End -->
+
+      <!-- About / Contact Start -->
+
+      <!-- About / Contact End -->
+    </main>
       
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </body>

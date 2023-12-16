@@ -1,4 +1,4 @@
-/* Global */
+/* General */
 * {
     box-sizing: border-box;
 }
@@ -12,18 +12,63 @@
 body {
     background-color: var(--primary); 
     color: white;
+    font-family: 'Sen', sans-serif;
+}
+
+.faded-shadow {
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 2px 16px;
+}
+
+.btn {
+    border: 1px solid var(--faded-grey);
+    border-radius: 100px;
+    background-color: var(--primary-t);
+    font-size: 0.8em;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 10px 40px;
+    transition: 
+        color .05s ease-in-out, 
+        background-color .05s ease-in-out,
+        border-color .05s ease-in-out,
+        box-shadow .05s ease-in-out;
+}
+
+.btn:hover {
+    background-color: var(--faded-grey);
+    border: 1px solid grey;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+}
+
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    background-color: var(--primary-t);
+    border: 1px solid grey;
+}
+
+section > .container {
+    border: 1px solid var(--faded-grey);
+    margin-bottom: 50px;
+}
+
+main {
+    padding: 0px 10px;
 }
   
 /* Navbar */
+
 .navbar {
-    /* border-bottom: 1px solid lightgrey; */
     /* Reduce thickness of focus shadow */
     --bs-navbar-toggler-focus-width: 0.1rem;
-    background-color: var(--primary) 
+    background-color: var(--primary);
+    padding-bottom: 0px;
 }
 
 .navbar a {
     color: white;
+}
+
+.navbar a:hover, .navbar a:focus, .navbar a:active {
+    color: lightgray;
 }
 
 .navbar-container {
@@ -53,12 +98,77 @@ body {
 }
 
 /* Jumbotron */
+
 .jumbotron {
     /* Account for fixed header height */
-    margin-top: 100px;
+    margin-top: 150px;
 }
+
 .jumbotron > .container {
-    border: 1px solid var(--faded-grey);
     background: radial-gradient(at bottom right,rgba(255, 212, 195, 0.2) 0%, var(--primary-t) 51%);
-    /* background: linear-gradient(144deg, rgba(255,173,239,1) 0%, rgba(255,255,255,0) 21%);*/
+}
+
+.headshot img{
+    border-radius: 100%;
+}
+
+/* Portfolio */
+
+#portfolio > .container {
+    background: radial-gradient(at top left,rgba(195, 211, 255, 0.2) 0%, var(--primary-t) 31%);
+}
+
+#portfolio .card.hero img {
+    object-fit: cover;
+    height: 100%;
+    max-height: 60vh;
+}
+
+#portfolio .card img {
+    object-fit: cover;
+    height: 100%;
+    max-height: 60vh;
+}
+
+
+#portfolio .grid {
+    width: 100%;
+    display: grid;
+    /* grid-template-rows: 2fr 1fr 1fr; */
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "project-1 project-1"
+    "project-2 project-3"
+    "project-4 project-5";
+    gap: 20px;
+}
+
+#project-1 {
+    grid-area: project-1;
+}
+
+#project-2 {
+    grid-area: project-2;
+}
+
+#project-3 {
+    grid-area: project-3;
+}
+
+#portfolio .card {
+    text-decoration: none;
+    background-color: var(--primary-t);
+    color: white;
+    border: 1px solid var(--faded-grey);
+}
+
+#portfolio .card:hover {
+    background-color: var(--faded-grey);
+    border: 1px solid grey;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+}
+
+
+#portfolio p {
+    margin: 0;
 }

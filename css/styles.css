@@ -63,7 +63,6 @@ a {
 }
 
 /* Navbar */
-
 .navbar {
     /* Reduce thickness of focus shadow */
     --bs-navbar-toggler-focus-width: 0.1rem;
@@ -106,7 +105,6 @@ a {
 }
 
 /* Jumbotron */
-
 .jumbotron {
     /* Account for fixed header height */
     margin-top: 50px;
@@ -121,7 +119,6 @@ a {
 }
 
 /* Portfolio */
-
 #portfolio > .container {
     background: radial-gradient(at top left,rgba(195, 211, 255, 0.2) 0%, var(--primary-t) 31%);
 }
@@ -150,7 +147,6 @@ a {
 }
 
 /* Skills */
-
 #skills > .container {
     background: radial-gradient(at bottom left,rgba(237, 198, 255, 0.2) 0%, var(--primary-t) 31%);
 }
@@ -160,7 +156,6 @@ a {
 }
 
 /* Contact */
-
 #contact > .container {
     background: radial-gradient(at top right,rgba(251, 255, 198, 0.2) 0%, var(--primary-t) 51%);
 }
@@ -175,7 +170,6 @@ a {
 }
 
 /* Footer */
-
 section footer {
     border-top: 1px solid var(--faded-grey);
 }
@@ -187,9 +181,3 @@ footer .nav-link {
 footer .nav-link:hover, footer .nav-link:focus, footer .nav-link:active {
     color: lightgray;
 }
-
-/* main {
-    background-color: darkblue;
-    z-index:9999;
-    position: relative;
-} */

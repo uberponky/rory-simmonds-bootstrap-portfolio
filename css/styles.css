@@ -2,6 +2,7 @@
 * {
     box-sizing: border-box;
 }
+
 :root {
     --primary: rgb(33,37,41);
     --primary-t: rgba(33,37,41,0);
@@ -16,7 +17,7 @@ body {
 }
 
 .faded-shadow {
-    box-shadow: rgba(0, 0, 0, 0.3) 2px 2px 16px;
+    box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 16px;
 }
 
 .btn {
@@ -37,7 +38,7 @@ body {
 .btn:hover {
     background-color: var(--faded-grey);
     border: 1px solid grey;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 0px 12px;
 }
 
 .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
@@ -45,15 +46,22 @@ body {
     border: 1px solid grey;
 }
 
+section {
+    padding-top: 100px;
+}
+
 section > .container {
     border: 1px solid var(--faded-grey);
-    margin-bottom: 50px;
 }
 
 main {
     padding: 0px 10px;
 }
-  
+
+a {
+    scroll-behavior: smooth;
+}
+
 /* Navbar */
 
 .navbar {
@@ -101,7 +109,7 @@ main {
 
 .jumbotron {
     /* Account for fixed header height */
-    margin-top: 150px;
+    margin-top: 50px;
 }
 
 .jumbotron > .container {
@@ -118,41 +126,10 @@ main {
     background: radial-gradient(at top left,rgba(195, 211, 255, 0.2) 0%, var(--primary-t) 31%);
 }
 
-#portfolio .card.hero img {
+ #portfolio .card img {
     object-fit: cover;
     height: 100%;
-    max-height: 60vh;
-}
-
-#portfolio .card img {
-    object-fit: cover;
-    height: 100%;
-    max-height: 60vh;
-}
-
-
-#portfolio .grid {
-    width: 100%;
-    display: grid;
-    /* grid-template-rows: 2fr 1fr 1fr; */
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "project-1 project-1"
-    "project-2 project-3"
-    "project-4 project-5";
-    gap: 20px;
-}
-
-#project-1 {
-    grid-area: project-1;
-}
-
-#project-2 {
-    grid-area: project-2;
-}
-
-#project-3 {
-    grid-area: project-3;
+    max-height: 50vh;
 }
 
 #portfolio .card {
@@ -168,7 +145,51 @@ main {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
 }
 
-
 #portfolio p {
     margin: 0;
 }
+
+/* Skills */
+
+#skills > .container {
+    background: radial-gradient(at bottom left,rgba(237, 198, 255, 0.2) 0%, var(--primary-t) 31%);
+}
+
+#skills img {
+    border-radius: 100%;
+}
+
+/* Contact */
+
+#contact > .container {
+    background: radial-gradient(at top right,rgba(251, 255, 198, 0.2) 0%, var(--primary-t) 51%);
+}
+
+#contact a {
+    color: white;
+    text-decoration: none;
+}
+
+#contact a:hover, #contact a:focus, #contact a:active {
+    color: lightgray;
+}
+
+/* Footer */
+
+section footer {
+    border-top: 1px solid var(--faded-grey);
+}
+
+footer .nav-link {
+    color: white;
+}
+
+footer .nav-link:hover, footer .nav-link:focus, footer .nav-link:active {
+    color: lightgray;
+}
+
+/* main {
+    background-color: darkblue;
+    z-index:9999;
+    position: relative;
+} */

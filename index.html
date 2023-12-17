@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4e27f107ca.js" crossorigin="anonymous"></script>
   </head>
 
   <body>
@@ -30,9 +31,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link" href="#">Portfolio</a>
-            <a class="nav-link" href="#">Skills</a>
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+            <a class="nav-link" href="#skills">Skills</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </div>
         </div>
       </div>
@@ -48,7 +49,7 @@
             <div class="col-lg-8 my-auto text-center text-lg-start">
               <p class="display-5 fw-bold">Learning to build amazing things on the web, one div at a time.</p>
               <p class="col-lg-10 fs-5">Keep reading for my portfolio, about me, and my contact details.</p>
-              <button class="btn btn-primary btn-lg" type="button">Get in touch</button>
+              <a class="btn btn-primary btn-lg" type="button" href="#contact">Get in touch</a>
             </div>
             <!-- Headshot -->
             <div class="col-6 col-lg-4 pb-3 pb-lg-0 headshot m-auto ">
@@ -67,11 +68,12 @@
       <!-- Portfolio Start -->
       <section id="portfolio">
         <div class="container p-5 rounded-5 text-center d-flex flex-column">
-          <h2 class="display-6 fw-bold mb-3">My Projects</h1>
+          <h2 class="display-6 fw-bold mb">Portfolio</h1>
+          <hr class="col12 col-lg-10 mx-auto">
           <!-- Grid Start-->
-          <div class="grid">
+          <div class="row gap-1 justify-content-center">
             <!-- Project 1 / Projects Start -->
-            <a class="card hero" id="project-1" href="https://slabcitypizza.co.uk/" target=”_blank”>
+            <a class="card col-md-10 p-0" id="project-1" href="https://slabcitypizza.co.uk/" target=”_blank”>
               <img 
               src="./images/slab-city-website.jpg" 
               alt="A mobile showing a website with a red background and a white logo that reads Slab City"
@@ -83,31 +85,7 @@
               </div>
             </a>
             <!-- Project 2 -->
-            <a class="card" id="project-2" href="https://blankbox.business/" target=”_blank”>
-              <img 
-              src="./images/design-fundamentals.jpg"
-              alt="A brochure open to a page with yellow and black infographics"
-              class="card-img-top"
-              >
-              <div class="card-body">
-                <h3 class="card-text fs-5">Design Fundamentals</h3>
-                <p>graphic, brochure</p>
-              </div>
-            </a>
-            <!-- Project 3 -->
-            <a class="card" id="project-3" href="https://blankbox.business/" target=”_blank”>
-              <img 
-              src="./images/bdr-flyers.png"
-              alt="Two flyers advertising a cycling charity event"
-              class="card-img-top"
-              >
-              <div class="card-body">
-                <h3 class="card-text fs-5">Charity Flyer</h3>
-                <p>graphic, flyer</p>
-              </div>
-            </a>
-            <!-- Project 4 -->
-            <a class="card" id="project-4" href="https://theearlybirdbakery.co.uk/" target=”_blank”>
+            <a class="card col-md-5 p-0" id="project-4" href="https://theearlybirdbakery.co.uk/" target=”_blank”>
               <img 
               src="./images/early-bird-website.jpg"
               alt="A laptop, tablet and mobile all showing a website homepage for a bakery"
@@ -118,8 +96,8 @@
                 <p>web, ecommerce</p>
               </div>
             </a>
-            <!-- Project 5 -->
-            <a class="card" id="project-5" href="https://blankbox.business/" target=”_blank”>
+            <!-- Project 3 -->
+            <a class="card col-md-5 p-0" id="project-5" href="https://blankbox.business/" target=”_blank”>
               <img 
               src="./images/chippa-nation.jpg"
               alt="Two sheets of paper showing the branding for a company called Chippa Nation"
@@ -130,6 +108,31 @@
                 <p>graphics, branding</p>
               </div>
             </a>
+            <!-- Project 4 -->
+            <a class="card col-md-5 p-0" id="project-2" href="https://blankbox.business/" target=”_blank”>
+              <img 
+              src="./images/design-fundamentals.jpg"
+              alt="A brochure open to a page with yellow and black infographics"
+              class="card-img-top"
+              >
+              <div class="card-body">
+                <h3 class="card-text fs-5">Design Fundamentals</h3>
+                <p>graphic, brochure</p>
+              </div>
+            </a>
+            <!-- Project 5 -->
+            <a class="card col-md-5 p-0" id="project-3" href="https://blankbox.business/" target=”_blank”>
+              <img 
+              src="./images/bdr-flyers.png"
+              alt="Two flyers advertising a cycling charity event"
+              class="card-img-top"
+              >
+              <div class="card-body">
+                <h3 class="card-text fs-5">Charity Flyer</h3>
+                <p>graphic, flyer</p>
+              </div>
+            </a>
+            
             <!-- Projects End -->
           </div>
           <!-- Grid End -->
@@ -137,12 +140,108 @@
       </section>
       <!-- Portfolio End -->
 
-      <!-- About / Contact Start -->
+      <!-- Skills Start -->
+      <section id="skills">
+        <div class="container p-5 rounded-5 text-center d-flex flex-column">
+          <h2 class="display-6 fw-bold mb">Skills</h1>
+          <hr class="col12 col-lg-10 mx-auto">
+          <p class="col-lg-10 fs-5 mx-auto mb-5">
+            Here are the range of skills I hope to learn from the edX Front-end Web Development Bootcamp.
+          </p>
+          <!-- Skills Start -->
+          <div class="row gap-5 justify-content-center">
+            <div class="col-3 col-lg-2">
+              <p class="fs-6 mb-2">HTML</p>
+              <img class="img-fluid faded-shadow" src="./images/skills_html.jpg" alt="html logo">
+            </div>
+            <div class="col-3 col-lg-2">
+              <p class="fs-6 mb-2">CSS</p>
+              <img class="img-fluid faded-shadow" src="./images/skills_css.jpg" alt="css logo">
+            </div>
+            <div class="col-3 col-lg-2">
+              <p class="fs-6 mb-2">Javascript</p>
+              <img class="img-fluid faded-shadow" src="./images/skills_javascript.jpg" alt="js logo">
+            </div>
+            <div class="col-3 col-lg-2">
+              <p class="fs-6 mb-2">Git</p>
+              <img class="img-fluid faded-shadow" src="./images/skills_git.jpg" alt="git logo">
+            </div>
+            <div class="col-3 col-lg-2">
+              <p class="fs-6 mb-2">APIs</p>
+              <img class="img-fluid faded-shadow" src="./images/skills_api.jpg" alt="api logo">
+            </div>
+            <div class="col-3 col-lg-2">
+              <p class="fs-6 mb-2">Agile</p>
+              <img class="img-fluid faded-shadow" src="./images/skills_agile.jpg" alt="agile logo">
+            </div>
+            <div class="col-3 col-lg-2">
+              <p class="fs-6 mb-2">React</p>
+              <img class="img-fluid faded-shadow" src="./images/skills_react.jpg" alt="react logo">
+            </div>
+            <div class="col-3 col-lg-2">
+              <p class="fs-6 mb-2">Node</p>
+              <img class="img-fluid faded-shadow" src="./images/skills_node.jpg" alt="node logo">
+            </div>
+          </div>
+          <!-- Skills End -->
+        </div>
+      </section>
+      <!-- Skills End -->
 
+      <!-- About / Contact Start -->
+      <section id="contact">
+        <div class="container p-5 rounded-5">
+          <div class="row flex-lg-row flex-column-reverse">
+            <!-- Contact / Content Start -->
+            <div class="d-flex flex-column align-items-center col-6 col-lg-4 headshot m-auto">
+              <i class="fa-solid fa-envelope mb-4 fa-lg"></i>
+              <a href="https://blankbox.business/">blankbox.business</a>
+              <i class="fa-solid fa-globe mt-4 mb-3 fa-lg"></i>
+              <a href="mailto:rory@blankbox.business">rory@blankbox.business</a>
+              <i class="fa-solid fa-phone mt-4 mb-3 fa-lg"></i>
+              <a href="tel:07739 519 483">07739 519 483</a>
+            </div>
+            <!-- About -->
+            <div class="col-lg-8 my-auto text-center text-lg-start pb-3 pb-lg-0">
+              <p class="display-5 fw-bold">Think I'm right for your next project?</p>
+              <p class="col-lg-11 fs-6">
+                I'm an aspiring Front-End Developer living in the UK, I currently work for 
+                myself through my business - Blank Box - and hope to offer Front-End 
+                Development as a service.
+                <br><br>
+                If you think I'm right for you, get in touch!
+              </p>
+            </div>
+            <!-- Content Ends -->
+          </div>
+        </div>
+      </section>
       <!-- About / Contact End -->
     </main>
-      
+    
+    <!-- Footer start -->
+    <section class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+        <!-- Credit and Logo -->
+        <p class="col-md-5 mb-0">© 2023 Blank Box Ltd</p>
+        <a href="https://blankbox.business/" class="col-md-2 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto">
+          <img 
+            src="./images/BB.svg" 
+            alt="Blank Box Logo" 
+            width="30" 
+            height="30" 
+            class="d-inline-block align-text-top text-white pe-2"
+          >
+        </a>
+         <!-- Footer Nav --> 
+        <ul class="nav col-md-5 justify-content-end">
+          <li class="nav-item"><a href="#portfolio" class="nav-link px-2">Portfolio</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link px-2">Skills</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link px-2">Contact</a></li>
+        </ul>
+      </footer>
+    </section>
+    <!-- Footer end -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </body>
-
 </html>

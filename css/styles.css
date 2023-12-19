@@ -38,7 +38,7 @@ body {
 .btn:hover {
     background-color: var(--faded-grey);
     border: 1px solid grey;
-    box-shadow: rgba(255, 255, 255, 0.1) 0px 0px 12px;
+    box-shadow: rgba(0, 0, 0, 0.9) 0px 0px 12px;
 }
 
 .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
